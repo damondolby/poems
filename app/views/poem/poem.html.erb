@@ -1,0 +1,13 @@
+<div><%=render(:partial => "types_popout")%></div>
+
+<div id="PoemDisplay">
+	<div id="PoemHeading">
+		<%=@poem.title%>
+	</div>
+	<div id="PoemTxt">
+		<%= @poem.poem%>
+	</div>
+	<div id="PoemNote">
+		Notes :-<br /><%= @poem.note%>
+	</div>
+</div>

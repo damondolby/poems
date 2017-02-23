@@ -1,0 +1,8 @@
+<div id="PoemGroup">
+	<div id="Heading">>>&nbsp;<%= get_selected_type_name%> Poems</div>
+	<div id="Poems">
+		<%for poem in get_poems%>
+			<%= link_to poem.title, { :action => "poem", :id => poem.id } %>
+		<%end%>
+	</div>
+</div>

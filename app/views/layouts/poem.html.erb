@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Ellusive Illusion  <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'poems' %>
+  <%= javascript_include_tag 'jquery' %> 
+  <%= javascript_include_tag 'poems' %> 
+
+</head>
+<body>	
+	<div id="Border">
+	<div id="Top">
+		<div id="Logo"></div>
+		<div id="Text">poems by Donald James Dolby</div>		
+	</div>             
+        <div id="Menu">
+        	<ul id="DropDowns">
+				<li class="level1">
+					<%= link_to 'Home', {:action => 'home'}%>
+				</li>
+				<li class="level1">
+					<%= link_to 'Contact', {:action => 'contact'}%>
+				</li>
+				<li class="level1">
+					<%= link_to 'About', {:action => 'about'}%>
+				</li>
+				<li class="level1">
+					<a href="/poem/list">The Poems</a>
+					<ul>
+						<%for type in get_types%>
+							<li><%= link_to type.name, {:action => 'list', :tid => type.id }%></li>
+						<%end%>
+					</ul>
+				</li>
+			</ul>
+        </div>
+		
+        <div id="Main">
+			<%= yield :layout  %>
+			<div id="Footer">All poems are the copyright of © Donald James Dolby 2009</div>
+		</div>
+		<div style="height: 20px;">&nbsp;</div>
+        
+    </div>
+</body>
+</html>

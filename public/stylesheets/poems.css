@@ -1,0 +1,298 @@
+body
+{
+	margin: 0px;
+	font: bold 12px arial;
+	/*background-color: #CFF;*/
+	background-image: url(/images/body_background.jpg);
+	background-repeat: repeat-x; 
+	background-color: #FFF;
+}
+
+a
+{
+	text-decoration: none;
+	color: #040;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+#Border
+{
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#Border #Top
+{
+	width: 796px;
+	/*background-color: #CFF;*/
+	height: 81px;
+	border: 2px solid #999900;
+	-moz-border-radius-topright: 15px; 
+	-webkit-border-top-right-radius: 15px;
+	-moz-border-radius-topleft: 15px; 
+	-webkit-border-top-left-radius: 15px;
+}
+
+#Border #Top #Text
+{
+	padding-top: 30px;
+	font: italic 16px verdana;
+}
+
+
+#Border #Top #Logo
+{
+	width: 402px;
+	height: 81px;
+	background: url("/images/Elusive5.png") no-repeat;
+	margin-right: 50px;
+	float: left;
+}
+
+
+#Border #Menu
+{
+	clear: both;
+	margin: 0px 0px 0px 0px;
+	border: 2px solid #999900;
+	background: #334400;
+	-moz-border-radius-bottomright: 15px; 
+	-webkit-border-bottom-right-radius: 15px;
+	-moz-border-radius-bottomleft: 15px; 
+	-webkit-border-bottom-left-radius: 15px;
+}
+
+#Border #Menu a
+{
+	/*color: #cf4748;*/
+	color: #CFF;
+	text-decoration: none;
+	margin-right: 10px; 
+	font: bold 14px arial; 
+}
+
+#Border #Menu a:hover
+{
+	color: #fff;
+	text-decoration: underline;
+}
+
+#Border #Main
+{
+	float: left;
+	width: 786px;
+	font: normal 11px arial;
+	/*background-color: #CFF;*/
+	padding: 50px 5px 20px 5px;
+	border: #999900 solid 2px;
+	-moz-border-radius: 15px; 
+	-webkit-border-radius: 15px;
+}
+
+#Border #Quote
+{
+	float: right;
+	width: 273px;
+	height: 140px;
+	margin-right: 40px;
+	
+}
+
+#Border #Quote #Image
+{
+	height: 154px;
+	background: url("/images/quote3.png") no-repeat;
+	
+}
+
+#Border #Quote #Text
+{
+	height: 21px;
+	text-align: right;
+	font: normal 11px "Times New Roman"; 
+	
+}
+
+#Border #Footer
+{
+	clear: both;
+	margin-top: 100px;
+	float: left;
+	text-align: center;
+	width: 800px;
+	color: #334400;
+}
+
+/*
+#xBorder #Menu div#Poems {
+	width: 200px;
+	height: 20px;
+	overflow: hidden;	
+	color: #cf4748;
+	font: bold 14px arial; 
+	display: inline;
+	position: absolute;
+
+}
+
+#xBorder #Menu div#Options {
+	background: #bef9e3;
+	border-bottom: solid 1px #000;
+	border-left: solid 1px #000;
+	border-right: solid 1px #000;
+	margin-top: 10px;
+}
+
+#xBorder #Menu div#Options a {
+	display: block;
+	padding: 0 3px;
+}
+
+#xBorder #Menu div#Options a:hover {
+	background: #f5f5f5;
+}*/
+
+#Border #Menu #DropDowns, #Border #Menu #DropDowns ul { 
+	list-style: none;
+	
+}
+#Border #Menu #DropDowns li.level1 ul { 
+	display: none; 
+	position: absolute; 
+	background-color: #334400; 
+	
+	border-left: 2px solid #999900; 
+	border-right: 2px solid #999900; 
+	border-bottom: 2px solid #999900; 
+	margin-top: 0px;
+	padding: 10px 5px 10px 5px;
+}
+	
+#Border #Menu #DropDowns li.level1:hover ul { 
+	display: block; 
+	z-index: 1;
+}
+
+#Border #Menu #DropDowns li.level1 { 
+	display: inline-block; 
+}
+
+
+/*#PoemGroup {z-index: -1;}*/
+
+#PoemGroup {
+	text-align: right;
+	width: 600px;	
+	margin-left: 150px;
+}
+
+#PoemGroup #Heading {
+	color: #334400;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer; cursor: hand;
+}
+#PoemGroup #Poems {  
+	width: 526px;
+	display: none; 
+	position: absolute; 
+	background: #334400;
+	margin: 10px;
+	padding: 30px;
+	border: #999900 solid 2px;	
+}
+#PoemGroup #Poems a {
+	display: block; 
+	color: #CFF; 
+	font: bold 14px arial; 
+}
+
+
+/*
+ 
+ #PoemGroup {
+	text-align: right;
+	float: right;	
+	margin-right: 50px;
+	width: 600px;
+}
+
+#PoemGroup #Heading {
+	color: #334400;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer; cursor: hand;
+}
+#PoemGroup #Poems {  
+	display: none; 
+	position: absolute; 
+	background: #334400;
+	margin: 10px;
+	padding: 30px;
+	border: #999900 solid 2px;	
+	margin-right: 50px;
+} 
+ */
+
+div#PoemDisplay {
+	margin: 50px 0px 0px 150px;
+}
+
+div#PoemDisplay #PoemTxt
+{   
+	font: 18px normal sans-serif, Geneva, Verdana, Arial, Helvetica;
+}
+
+div#PoemDisplay #PoemNote
+{   
+	font: 12px normal sans-serif, Geneva, Verdana, Arial, Helvetica;
+	margin-top: 50px;	
+}
+
+div#PoemDisplay #PoemHeading
+{   
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 30px;	
+	color: #334400;
+	
+}
+
+.HomeTxt
+{   
+	font: 14px normal sans-serif, Geneva, Verdana, Arial, Helvetica;
+	margin: 0px 0px 0px 40px;
+	width: 350px;
+	float: left;
+}
+
+table.poem {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	border: 1px ridge black;
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	width: 400px;
+	padding: 5px;
+	background-imagex: url(/images/body_background.jpg);
+	background-repeatx: repeat-x; 
+	#background-color: #ffaaaa;
+	color: #334400;
+}
+
+table.poem a {
+	color: #334400;
+}
+
+table.poem th{
+	colorx: #334400;
+}
+
+table.poem td {
+	padding-left: 10px;
+}

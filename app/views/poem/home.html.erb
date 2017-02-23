@@ -1,0 +1,22 @@
+<div class="HomeTxt">
+	<table class="poem">
+		<tr>
+			<th>Featured Poems</th>
+		</tr>
+		<%for poem in @poems_highlight%>
+			<tr><td><%= link_to poem.title, { :action => "poem", :id => poem.id } %></td></tr>
+		<%end%>
+	</table>
+	<table class="poem">
+		<tr>
+			<th>Recent Poems</th>
+		</tr>
+		<%for poem in @poems_recent%>
+			<tr><td><%= link_to poem.title, { :action => "poem", :id => poem.id } %></td></tr>
+		<%end%>
+	</table>
+</div>
+<div id="Quote">
+	<div id="Image"></div>	
+	<div id="Text"></div>					
+</div>
